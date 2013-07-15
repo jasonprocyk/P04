@@ -1,0 +1,76 @@
+/*
+
+	styles for Portfolio de Jason Procyk
+
+
+*/
+
+/**************************************
+
+	MAIN
+	
+***************************************/
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+/* html element 62.5% font-size for REM use */
+html {
+	font-size:62.5%;
+	overflow-y: scroll;
+}
+
+body {
+	font:300 11px/1.4 'Lato', Helvetica, Arial, sans-serif;
+	color:#444;
+	background-color: rgba(136,191,40,0.5);
+}
+
+img {
+	max-width: 100%;
+}
+
+
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+/* wrapper */
+.wrapper {
+	max-width:1280px;
+	width:90%;
+	margin:0rem auto 3rem auto;
+}
+
+/* header */
+.header {
+	width: 100%;
+	min-height: 340px;
+	padding: 2rem 0 3rem 0;
+	
+	border-width: 0 0 0px 0;
+	border-style: solid;
+	border-color: #CCC;
+	
+	background-color: #FFF;
+}
+
+/* logo */
+.logo {
+	width: 31%;
+	margin: 0 0 0 0;
+	padding: 0;
+	
+	background-color: #FFF;
+	text-align: left;
+	float: left;
+}
