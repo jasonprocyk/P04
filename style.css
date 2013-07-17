@@ -32,7 +32,8 @@ html {
 body {
 	font:300 11px/1.4 'Lato', Helvetica, Arial, sans-serif;
 	color:#444;
-	background-color: rgba(136,191,40,0.5);
+	/*background-color: rgba(136,191,40,0.5);*/
+	/* alt color */ background-color: rgba(2, 72, 75, 0.5);
 }
 
 img {
@@ -114,20 +115,15 @@ div.menu ul li:hover a {
 	
 }
 
-div.menu ul li.current_page_item a {
-	color: #444;
+div.menu ul li.current_page a {
+	color: rgba(2, 72, 75, 1);
 	
 }
-div.menu ul li.current_page_item:before {
-	color: #444;
+div.menu ul li.current_page:before {
+	color: rgba(2, 72, 75, 1);
 	-webkit-box-shadow: 6px 6px 0px rgba(50, 50, 50, 0.7);
 	-moz-box-shadow:    6px 6px 0px rgba(50, 50, 50, 0.7);
 	box-shadow:         6px 6px 0px rgba(50, 50, 50, 0.7);
-}
-
-div.menu ul li.current_page_item:hover:before {
-	top: 0;
-	left: 0;
 }
 
 current_page_item:after {
@@ -155,7 +151,8 @@ div.menu ul li:hover:before {
 	height: 0;
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
-	border-bottom: 15px solid rgba(136,191,40,0.5);
+	/*border-bottom: 15px solid rgba(136,191,40,0.5);*/
+	/* alt color */ border-bottom: 15px solid rgba(2, 72, 75, 0.5);
 	content: " ";
 	position: absolute;
 	bottom: -6rem;
@@ -168,7 +165,9 @@ div.menu ul li:hover:before {
 	height: 0;
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
-	border-bottom: 15px solid rgba(136,191,40,0.5);
+	/*border-bottom: 15px solid rgba(136,191,40,0.5);*/
+	/* alt color */ border-bottom: 15px solid rgba(2, 72, 75, 0.5);
+	
 	content: " ";
 	position: absolute;
 	bottom: -2.6rem;
@@ -180,6 +179,8 @@ div.menu ul li:hover:before {
 
 div.menu ul li.current_page:before {
 	color: #444;
+	left: -6px;
+	top: -6px;
 	-webkit-box-shadow: 6px 6px 0px rgba(50, 50, 50, 0.7);
 	-moz-box-shadow:    6px 6px 0px rgba(50, 50, 50, 0.7);
 	box-shadow:         6px 6px 0px rgba(50, 50, 50, 0.7);
@@ -212,7 +213,8 @@ h1 {
 	padding: 0;
 	margin-bottom: 1rem;
 	
-	color: rgba(64, 83, 30, 1);
+	/*color: rgba(64, 83, 30, 1);*/
+	/* alt color */ color: rgba(2, 72, 75, 1)
 }
 
 h1 strong {
@@ -223,6 +225,7 @@ h1 strong {
 h2 {
 	font-family: 'Lato', sans-serif;
 	font-size: 2.5rem;
+	color: rgba(2, 72, 75, 1);
 	font-weight: 500;
 	text-transform: uppercase;
 	margin-bottom: 0;
@@ -232,11 +235,12 @@ h2 {
 div.story_branch h2{
 	font-size: 2.1rem;
 	line-height: inherit;
-	color: #000;
+	color: #CCC;
 	font-weight: 300;
 	margin: 4rem 0 2rem 0;
 	padding: 0.5rem 0.25rem;
-	background-color: rgba(136,191,40,0.5);
+	/*background-color: rgba(136,191,40,0.5);*/
+	/* alt color */ background-color: rgba(2, 72, 75, 0.5);
 	text-align: center;
 }
 
@@ -244,7 +248,8 @@ div.story_branch h2{
 	font-size: 2rem;
 	font-weight: 300;
 	font-style: italic;
-	color: rgba(136,191,40,1);
+	/* color: rgba(136,191,40,1); */
+	/* alt color  color: rgba(2, 72, 75, 1);*/
 }
 
 .date + p {
@@ -336,4 +341,29 @@ div.story_branch {
 
 div.story_branch:nth-of-type(4) {
 	margin-right: 0;
+}
+
+
+/*************/
+
+.view-article {
+	display: block;
+	margin-top: 2rem;
+	width: 100%;
+	background-color: rgba(2, 72, 75, 0.5);
+	text-align: center;
+	padding: 0.5rem 0;
+	font-style: italic;
+	font-weight: 500;
+	color: #CCC;
+	transition: background-color 0.2s ease-out;
+}
+
+.view-article:hover {
+	background-color: rgba(2, 72, 75, 0.3);
+	
+}
+
+.view-article:active {
+	background-color: rgba(2, 72, 75, 0.7);
 }
