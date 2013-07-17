@@ -89,30 +89,6 @@ div.menu ul li:before {
 	transition: all 0.2s ease-out; 
 }
 
-div.menu ul li.current_page_item:before {
-	color: #444;
-	-webkit-box-shadow: 6px 6px 0px rgba(50, 50, 50, 0.7);
-	-moz-box-shadow:    6px 6px 0px rgba(50, 50, 50, 0.7);
-	box-shadow:         6px 6px 0px rgba(50, 50, 50, 0.7);
-}
-
-div.menu ul li.current_page_item:hover:before {
-	top: 0;
-	left: 0;
-}
-
-div.menu ul li.current_page_item:after {
-	width: 0;
-	height: 0;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-	border-bottom: 15px solid rgba(136,191,40,0.5);
-	content: " ";
-	position: absolute;
-	bottom: -6.6rem;
-	left: 45%;
-}
-
 
 div.menu ul li a {
 	color: #999;
@@ -137,18 +113,19 @@ div.menu ul li.current_page_item a {
 	color: #444;
 	
 }
-
-div.menu ul li:hover:before {
+div.menu ul li.current_page_item:before {
 	color: #444;
-	left: -6px;
-	top: -6px;
-	
 	-webkit-box-shadow: 6px 6px 0px rgba(50, 50, 50, 0.7);
 	-moz-box-shadow:    6px 6px 0px rgba(50, 50, 50, 0.7);
 	box-shadow:         6px 6px 0px rgba(50, 50, 50, 0.7);
 }
 
-div.menu ul li.current_page:after {
+div.menu ul li.current_page_item:hover:before {
+	top: 0;
+	left: 0;
+}
+
+current_page_item:after {
 	width: 0;
 	height: 0;
 	border-left: 15px solid transparent;
@@ -159,6 +136,28 @@ div.menu ul li.current_page:after {
 	bottom: -6.6rem;
 	left: 45%;
 }
+div.menu ul li:hover:before {
+	color: #444;
+	left: -6px;
+	top: -6px;
+	
+	-webkit-box-shadow: 6px 6px 0px rgba(50, 50, 50, 0.7);
+	-moz-box-shadow:    6px 6px 0px rgba(50, 50, 50, 0.7);
+	box-shadow:         6px 6px 0px rgba(50, 50, 50, 0.7);
+}
+
+.current_page:after {
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 15px solid rgba(136,191,40,0.5);
+	content: " ";
+	position: absolute;
+	bottom: -2.6rem;
+	left: 82px;
+	z-index:99;
+}
 
 div.menu ul li.current_page:before {
 	color: #444;
@@ -167,12 +166,12 @@ div.menu ul li.current_page:before {
 	box-shadow:         6px 6px 0px rgba(50, 50, 50, 0.7);
 }
 
-div.menu ul li.current_page:hover:before {
+.current_page:hover:before {
 	top: 0;
 	left: 0;
 }
 
-div.menu ul li.current_page a {
+.current_page a {
 	color: #444;
 	
 }
@@ -271,6 +270,7 @@ h3 {
 	background-color: #FFF;
 	text-align: left;
 	float: left;
+	position: relative;
 }
 
 .main{
