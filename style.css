@@ -39,6 +39,11 @@ img {
 	max-width: 100%;
 }
 
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
 /*------------------------------------*\
     NAVIGATION MENU
 \*------------------------------------*/
@@ -228,7 +233,17 @@ div.story_branch h2{
 	padding: 0.5rem 0.25rem;
 	background-color: rgba(136,191,40,0.5);
 	text-align: center;
-	}
+}
+
+/*
+.project_listing > article > h2 {
+	font-size: 2.1rem;
+	color: #000;
+	font-weight: 300;
+	margin: 4rem 0 2rem 0;
+	padding: 0.5rem 0;
+	background-color: rgba(136,191,40,0.5);
+}*/
 
 h3 {
 	font-family: 'Lato', sans-serif;
@@ -276,6 +291,16 @@ h3 {
 .main{
 	box-sizing: border-box;
 	margin-top: 5rem;
+}
+
+.project_listing > article {
+	width: 29%;
+	display: inline-block;
+	margin: 2rem 6.2% 4rem 0;
+}
+
+.detail > article, .about_me > article {
+	width: 100%;
 }
 
 div.story_branch {
