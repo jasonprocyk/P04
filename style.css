@@ -189,6 +189,82 @@ div.menu ul li.current_page:before {
 	GENERAL TYPE
 */
 
+.buttons {
+	float: right;
+	width: 25%;
+	margin-top: 1rem;
+}
+
+a.button {
+	display: inline-block;
+	font-size: 2rem;
+	position: relative;
+	margin: 0 0 1.5rem 0;
+	height: 4rem;
+	width: 100%;
+	padding: 0.5rem 2rem;
+	background-color:  rgba(2, 72, 75, 0.4);
+	color: #DDD;
+	font-weight: 100;
+	
+	-moz-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out; 
+	
+}
+
+a.button:hover, a.button:hover:after  {
+	-webkit-box-shadow: 0.5rem 0.5rem 0px rgba(50, 50, 50, 0.7);
+	-moz-box-shadow:    0.5rem 0.5rem 0px rgba(50, 50, 50, 0.7);
+	box-shadow:         0.5rem 0.5rem 0px rgba(50, 50, 50, 0.7);
+	left: -0.5rem;
+	top: -0.5rem;
+}
+
+a.button:hover:after {
+	left: -5.5rem;
+	top: 0;
+}
+
+a.button:hover:before {
+	left: -4rem;
+}
+
+a.button:before {
+	width: 0;
+	height: 0;
+	border-top: 9px solid transparent;
+	border-bottom: 9px solid transparent;
+	/*border-bottom: 15px solid rgba(136,191,40,0.5);*/
+	/* alt color border-left: 15px solid rgba(2, 72, 75, 1); */
+	border-left: 15px solid #EEE;
+	position: absolute;
+	left: -3.5rem;
+	top: 1rem;
+	content: " ";
+	z-index: 5;
+	
+	-moz-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out; 
+}
+
+a.button:after {
+	width: 4rem;
+	height: 4rem;
+	background-color: rgba(2, 72, 75, 0.4);
+	position: absolute;
+	left: -5rem;
+	top: 0rem;
+	content: " ";
+	
+	-moz-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out; 
+}
 
 h1 {
 	font-family: 'Playfair Display', sans-serif;
@@ -269,6 +345,10 @@ p {
 	font-weight: 300;
 }
 
+.home #introduction > p:first-of-type {
+	width: 65%;
+}
+
 
 /*------------------------------------*\
     STRUCTURE
@@ -342,6 +422,7 @@ div.story_branch:nth-of-type(4n) {
 .home .story_branch:nth-of-type(2n) {
 	margin-right: 0;
 }
+
 
 
 /*************/
