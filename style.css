@@ -297,7 +297,7 @@ h2 {
 	line-height: 2.3rem;
 }
 
-div.story_branch h2{
+.main div h2{
 	font-size: 2.1rem;
 	line-height: inherit;
 	color: #CCC;
@@ -347,6 +347,10 @@ p {
 
 .home #introduction > p:first-of-type {
 	width: 65%;
+}
+
+.project article > p:first-of-type {
+	font-size: 2rem;
 }
 
 
@@ -401,25 +405,37 @@ p {
 	width: 100%;
 }
 
-div.story_branch {
+.main div {
 	width: 21%;
 	margin-right: 5%;
 	display: inline-block;
 	vertical-align: top;
 }
 
-div.story_branch:nth-of-type(4n) {
+.main div:nth-of-type(4n) {
 	margin-right: 0;
 }
 
 
 /******* PAGES **********/
 
-.home .story_branch {
+.home div {
 	width: 47.2%;
 }
 
-.home .story_branch:nth-of-type(2n) {
+.home div:nth-of-type(2n) {
+	margin-right: 0;
+}
+
+.project section.big_media {
+	background-color: #444;
+	width: 100%;
+	margin-right: 0;
+	height: 350px;
+}
+
+.project div.meta {
+	width: 24%;
 	margin-right: 0;
 }
 
