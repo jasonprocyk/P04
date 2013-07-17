@@ -33,7 +33,7 @@ body {
 	font:300 11px/1.4 'Lato', Helvetica, Arial, sans-serif;
 	color:#444;
 	/*background-color: rgba(136,191,40,0.5);*/
-	/* alt color */ background-color: rgba(2, 72, 75, 0.5);
+	/* alt color */ background-color: rgba(2, 72, 75, 0.4);
 }
 
 img {
@@ -126,17 +126,6 @@ div.menu ul li.current_page:before {
 	box-shadow:         6px 6px 0px rgba(50, 50, 50, 0.7);
 }
 
-current_page_item:after {
-	width: 0;
-	height: 0;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-	border-bottom: 15px solid rgba(136,191,40,0.5);
-	content: " ";
-	position: absolute;
-	bottom: -6.6rem;
-	left: 45%;
-}
 div.menu ul li:hover:before {
 	color: #444;
 	left: -6px;
@@ -152,7 +141,7 @@ div.menu ul li:hover:before {
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
 	/*border-bottom: 15px solid rgba(136,191,40,0.5);*/
-	/* alt color */ border-bottom: 15px solid rgba(2, 72, 75, 0.5);
+	/* alt color */ border-bottom: 15px solid rgba(2, 72, 75, 0.4);
 	content: " ";
 	position: absolute;
 	bottom: -6rem;
@@ -166,7 +155,7 @@ div.menu ul li:hover:before {
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
 	/*border-bottom: 15px solid rgba(136,191,40,0.5);*/
-	/* alt color */ border-bottom: 15px solid rgba(2, 72, 75, 0.5);
+	/* alt color */ border-bottom: 15px solid rgba(2, 72, 75, 0.4);
 	
 	content: " ";
 	position: absolute;
@@ -178,7 +167,7 @@ div.menu ul li:hover:before {
 
 
 div.menu ul li.current_page:before {
-	color: #444;
+	color: rgba(2, 72, 75, 1);
 	left: -6px;
 	top: -6px;
 	-webkit-box-shadow: 6px 6px 0px rgba(50, 50, 50, 0.7);
@@ -275,7 +264,7 @@ h3 {
 p {
 	font-size: 1.6rem;
 	line-height: 2.6rem;
-	color: #444;
+	color: #333;
 	max-width: 100%;
 	font-weight: 300;
 }
