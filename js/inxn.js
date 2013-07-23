@@ -50,4 +50,24 @@
 		});
 		
 		
+		
+		$("[data-chunk]").on("click", function(e){
+			e.preventDefault();
+			var id = $(this).attr("data-chunk");
+			var content = $("#" + id).html();
+			if (!$("#" + id).hasClass("opened")){
+				if ($(".story_branch.empty").length > 0){
+					$(".story_branch.empty").first().removeClass("empty").html(content);
+				}else{
+					$("article").append("<div class='story_branch'>" + content + "</div>");
+				}
+				$("#" + id).addClass("opened");
+				
+			}
+		});
+		
+		
+		
+		
+		
 	});

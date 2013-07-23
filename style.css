@@ -345,6 +345,13 @@ p {
 	font-weight: 300;
 }
 
+p a, p a:visited {
+	font-weight: 500;
+	font-style: italic;
+	color: rgba(255,255,255,0.7);
+}
+
+
 .home #introduction > p:first-of-type {
 	width: 65%;
 }
@@ -410,10 +417,20 @@ p {
 	margin-right: 5%;
 	display: inline-block;
 	vertical-align: top;
+	transition: opacity 0.2s ease-out;
+}
+
+.main div.empty {
+	opacity: 0.50;
+	
 }
 
 .main div:nth-of-type(4n) {
 	margin-right: 0;
+}
+
+.main .story_chunk {
+	display: none;
 }
 
 
