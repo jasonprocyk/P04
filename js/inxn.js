@@ -5,6 +5,13 @@
 		
 		$(document).keypress(function(e){
 			console.log(e.which);
+			if (e.which == 119){
+				window.location.href="portfolio.html";
+			}else if (e.which == 115){
+				window.location.href = "story.html";
+			}else if (e.which == 106){
+				window.location.href = "index.html";
+			}
 		});
 		
 		$("#show_nav").bind("click", function(){

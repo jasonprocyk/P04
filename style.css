@@ -117,7 +117,7 @@ ul.specs li:nth-child(2n){
 \*------------------------------------*/
 
 div.menu ul {
-	padding: 132px 0 0 0;
+	padding: 90px 0 0 0;
 	margin: 0;
 	font-size: 2rem;
 }
@@ -144,11 +144,11 @@ div.menu ul li:before {
 	
 	color: #999;
 	width:64px;
-	height: 76px;
+	height: 64px;
 	margin-bottom: 12px;
 	background-color: #E6E6E6;
 	display: inline-block;
-	padding: 2.5rem 0 0 0;
+	padding: 1.5rem 0 0 0;
 	
 	position: relative;
 	
@@ -476,7 +476,7 @@ a[data-link-desc]:hover:before {
 /* header */
 .header {
 	width: 100%;
-	min-height: 340px;
+	min-height: 290px;
 	padding: 2rem 0 3rem 0;
 	
 	border-width: 0 0 0px 0;
