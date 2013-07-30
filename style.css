@@ -211,7 +211,7 @@ div.menu ul li:hover:before {
 	/* alt color */ border-bottom: 15px solid rgba(72,127,138,1);
 	content: " ";
 	position: absolute;
-	bottom: -61px;
+	bottom: -65px;
 	left: 45%;
 	z-index:99;
 }
@@ -416,6 +416,16 @@ p {
 	font-weight: 300;
 	width: 100%;
 }
+
+p.big {
+	font-size: 2.2rem;
+	line-height: 3.4rem;
+}
+
+p em {
+	
+}
+
 
 
 .story_branch p{

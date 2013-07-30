@@ -70,7 +70,8 @@
 				if ($(".story_branch.empty").length > 0){
 					$(".story_branch.empty").first().removeClass("empty").html(content);
 				}else{
-					$("article").append("<div class='story_branch'>" + content + "</div>");
+					$("article").append("<div class='story_branch hidden'>" + content + "</div>");
+					$(".story_branch.hidden").removeClass("hidden");
 				}
 				$("#" + id).addClass("opened");
 				
