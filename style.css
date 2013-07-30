@@ -420,6 +420,10 @@ p a, p a:visited {
 	transition: opacity 0.2s ease-out;
 }
 
+.main div.overview {
+	width: 30%;
+}
+
 .main div.empty {
 	opacity: 0.50;
 	
@@ -480,4 +484,9 @@ p a, p a:visited {
 
 .view-article:active {
 	background-color: rgba(2, 72, 75, 0.7);
+}
+
+iframe {
+	height: 100%;
+	width: 100%;
 }
