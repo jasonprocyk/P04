@@ -46,6 +46,17 @@ a {
 	text-decoration: inherit;
 }
 
+a[data-chunk] {
+	background-color: rgba(255,255,255,0.1);
+	transition: background 0.2s ease-out;
+	font-weight: inherit;
+}
+
+a[data-chunk]:hover {
+	text-decoration: none;
+	background-color: rgba(255,255,255,0.2);
+}
+
 .media p {
 	text-align: center;
 	margin-top: 1rem;
@@ -334,7 +345,7 @@ h1 {
 	color: rgba(255,255,255,1);
 	text-align: left;
 	
-	width: 60%;
+	width: 66%;
 	
 	margin: 0 35% 4rem 0;
 	padding: 0;
@@ -367,9 +378,21 @@ h2 {
 	margin: 4rem 0 2rem 0;
 	padding: 0.5rem 0.25rem;
 	/*background-color: rgba(136,191,40,0.5);*/
-	/* alt color */ background-color: rgba(255,255,255,1);
-	color: rgba(72,127,138,1);
+	/* alt color */ background-color: rgba(255,255,255,0.0);
+	
+	transition: all 0.2s ease-out;
+
+	color: rgba(255,255,255,1);
 	text-align: center;
+	
+	border-width: 1px;
+	border-color: #FFF;
+	border-style: dashed;
+}
+
+.main div h2.highlight, .main div h2.perm_highlight {
+	background-color: rgba(255,255,255,1);
+	color: rgba(72,127,138,1);
 }
 
 .date {
