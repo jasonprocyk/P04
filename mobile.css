@@ -2,6 +2,7 @@
 
 .logo {
 	width: 100%;
+	float: none;
 }
 
 .logo img {
@@ -20,6 +21,11 @@
 
 .header {
 	padding-bottom: 0.5rem;
+}
+
+div.menu ul {
+	margin-top: 0;
+	padding-top: 0;
 }
 
 div.menu ul li {
@@ -54,6 +60,7 @@ div.menu ul li a {
 
 h1 {
 	width: 100%;
+	margin-right: 0;
 }
 
 .main {
@@ -91,4 +98,12 @@ h1 {
 	width: 100%;
 	margin: 0 0 1rem 0;
 	text-align: left;
+}
+
+
+
+.project_listing > article {
+	width: 100%;
+	display: block;
+	margin: 0 0 8rem 0;
 }
