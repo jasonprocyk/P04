@@ -686,6 +686,7 @@ a[data-link-desc]:hover:before {
 iframe {
 	height: 100%;
 	width: 100%;
+	min-height: 350px;
 	border-width: 0;
 }
 
@@ -728,4 +729,36 @@ iframe {
 	left: 99.5%;
 	top: 30%;
 	z-index:99;
+}
+
+
+nav.projects {
+	display: block;
+	width: 100%;
+	margin-top: 6rem;
+	border-width: 1px 0 0 0;
+	border-color: rgba(255,255,255,0.25);
+	border-style: solid;
+}
+
+
+nav.projects ul {
+	position: relative;
+}
+
+nav.projects li:nth-child(1) {
+	float: left;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	
+}
+
+nav.projects li:nth-child(2) {
+	float: right;
+	text-align: right;
+	position: absolute;
+	right: 0;
 }

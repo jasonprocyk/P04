@@ -117,3 +117,9 @@ h1 {
 .project section.big_media {
 	max-height: 200px;
 }
+
+iframe {
+	min-height: 200px;
+	height: 100%;
+}
+
