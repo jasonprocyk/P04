@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+	
+	<!--
+	
+		Jason Procyk
+		info...
+	
+	-->
+	
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta charset="UTF-8" />
+		
+		<meta name="viewport" content="width=device-width" />	<!--	disables page scaling on mobile devices	-->
+		
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		
+		<title>GEMS | Jason Procyk</title>
+		<link rel="icon" type="image/png" href="img/favicon.png" />
+		
+		<!-- STYLESHEETS -->
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic|Playfair+Display:400,700,700italic|Playfair+Display+SC:700,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="normalize.css" />
+		<link rel="stylesheet" href="style.css" />
+		
+			<link rel="stylesheet" media="screen and (max-width: 480px)" href="mobile.css" />
+			<!--<link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 768px)" href="tablet.css" />
+			<link rel="stylesheet" media="screen and (max-width: 320px)" href="tiny.css" />-->
+		<!-- /STYLESHEETS -->
+		
+		<!-- SCRIPTS -->
+		<script src="js/jquery.min.js"></script>
+		<!-- /SCRIPTS -->
+		
+	</head>
+	
+	<body>
+		
+		<!-- HEADER -->
+		<header class="header group">
+			<div class="wrapper">
+				
+				<!-- LOGO -->
+				<div class="logo">
+					<a href="index.html">
+						<img src="images/short-logo-4.gif" alt="Jason Procyk logo" class="logo-img" />
+					</a>
+				</div>
+				<!-- /LOGO -->
+				
+				<!-- NAVIGATION -->
+				<nav class="nav" role="navigation">
+					<div class="menu">
+						<ul>
+							<li data-letter="W"  class="current_page"><a href="portfolio.html">see my work</a></li>
+							<li data-letter="S"><a href="story.html">learn my story</a></li>
+							<li data-letter="C"><a href="contact.html">contact me</a></li>
+						</ul>
+					</div>
+				</nav>
+				<!-- /NAVIGATION -->
+				
+			</div>
+		</header>
+		
+		<!-- /HEADER -->
+		
+		<!-- CONTENT -->
+		<div class="wrapper">
+			<section class="main project">
+				<article>
+					<h1>GEMS Location-Based Game</h1>
+					<p class="big">How can people use location as a context for recording and sharing personal experiences? I designed, developed, and evaluated an experimental location-based game to find out.</p>	
+					<section class="big_media">
+						<img src="images/gems_map.png" alt="Map interface in GEMS" />
+					</section>
+				
+					<div class="overview">
+						<h2 class="story overview">Design</h2>
+						<p>
+							GEMS ("Geolocated Embedded Memory System") is a Location-Based Game (LBG) designed to support storytelling and knowledge of place among family members and close friends. Players revisit meaningful places from the past and leave behind digital memory records for their friends and family to find. Each memory record uses digital media captured from the place in question to tell a story about what happened there.
+						</p>
+						
+						<h2 class="story">Collaborators</h2>
+						<p class="special">Jason Procyk (Primary Investigator)<br />Prof. Carman Neustaedter (Project Supervisor)</p>
+					</div>
+					<div>
+						<h2 class="story">Implementation</h2>
+						<p>
+							The current high-fidelity prototype is a Node.JS web application. It features a responsive web browser interface, and it utilizes Javascript's GeoLocation API with the Google Maps API to handle location-based interactions.
+						</p>
+					</div>
+					
+					<div>
+						<h2 class="story">Evaluation</h2>
+						<p>
+							We followed 15 participants as they played the game for a period of three weeks. We collected qualitative data through a combination of interviews (structured and semi-structured) and diary questions. Quantitative data was collected in a database automatically through the game application. 
+						</p>
+						<p>
+							We published a short WIP paper at <a href="http://chi2013.acm.org/" target="_blank" title="Learn more about the conference">CHI 2013</a>, and the full paper is currently in submission for <a href="http://cscw.acm.org/" target="_blank"> CSCW 2014</a>.
+						</p>
+					</div>
+					
+				</article>
+			</section>
+		</div>
+		<!-- /CONTENT -->
+		
+		
+		<!-- scripts -->
+		<script type="text/javascript" src="js/inxn.js">
+		</script>
+
+	</body>
+	
+</html>

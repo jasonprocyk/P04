@@ -493,6 +493,7 @@ a[data-link-desc]:hover:before {
 	display: inline-block;
 	max-width: 35%;
 	margin-left: 10%;
+	
 }
 
 /*------------------------------------*\
@@ -625,14 +626,25 @@ a[data-link-desc]:hover:before {
 }
 
 .project section.big_media {
-	background-color: #444;
+	background-color: #222;
 	width: 100%;
 	margin-right: 0;
 	height: 350px;
+	overflow-y: hidden;
+	text-align: center;
 }
+
 
 .project div.meta {
 	width: 24%;
+	margin-right: 0;
+}
+
+.main.project div {
+	width: 29.8%;
+}
+
+.main.project div:nth-of-type(3n){
 	margin-right: 0;
 }
 
@@ -665,6 +677,7 @@ a[data-link-desc]:hover:before {
 iframe {
 	height: 100%;
 	width: 100%;
+	border-width: 0;
 }
 
 
