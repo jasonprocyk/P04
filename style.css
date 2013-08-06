@@ -80,34 +80,7 @@ ul.specs {
 	
 	position: relative;
 }
-/*
-ul.specs:before {
-	width: 0;
-	height: 0;
-	border-left: 14px solid transparent;
-	border-right: 14px solid transparent;
-	margin-left: 1px;
-	border-top: 14px solid rgba(72,127,138,1);
-	content: " ";
-	position: absolute;
-	bottom: -14px;
-	left: 47%;
-	z-index:101;
-}
 
-ul.specs:after {
-	width: 0;
-	height: 0;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-	border-top: 15px solid #FFF;
-	content: " ";
-	position: absolute;
-	bottom: -16px;
-	left: 47%;
-	z-index:99;
-}
-*/
 ul.specs li {
 	display: inline-block;
 	width: 25%;
@@ -629,10 +602,46 @@ a[data-link-desc]:hover:before {
 	background-color: #222;
 	width: 100%;
 	margin-right: 0;
-	height: 350px;
+	max-height: 350px;
 	overflow-y: hidden;
 	text-align: center;
 }
+
+.image_link {
+	cursor: default;
+}
+
+.project div img {
+	cursor: pointer;
+}
+/*
+.big_media ul {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.big_media li {
+	float: right;
+	width: 25%;
+	height: 49.5%;
+	padding: 0;
+	margin: 0;
+	opacity: 0.250;
+	cursor: pointer;
+	border-width: 0 0 2px 2px;
+	border-color:  rgba(72,127,138,1);
+	border-style: solid;
+}
+
+
+
+.big_media li.selected {
+	float: left;
+	width: 74.5%;
+	opacity: 1;
+	cursor: auto;
+}*/
 
 
 .project div.meta {

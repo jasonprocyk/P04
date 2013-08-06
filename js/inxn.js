@@ -85,4 +85,22 @@
 			var id = $(this).attr("data-chunk");
 			$("#" + id+ " h2").removeClass('highlight');
 		});
+		
+		
+		$(".project div a.image_link").click(function(e){
+			var src = $(this).attr("href");
+			if (window.screen.width > 800){
+				e.preventDefault();
+				$(".big_media img").attr("src", src);
+			}
+		});
+		
+		$(".big_media a.image_link").click(function(e){
+			var src = $(this).attr("href");
+			if (window.screen.width > 800){
+				e.preventDefault();
+			}
+		});
+		
+		
 	});

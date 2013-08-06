@@ -114,6 +114,6 @@ h1 {
 	width: 100%;
 }
 
-.main.project div {
-
+.project section.big_media {
+	max-height: 200px;
 }
