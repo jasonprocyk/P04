@@ -336,7 +336,7 @@ h1 {
 	
 	width: 60%;
 	
-	margin: 0 0 4rem 0;
+	margin: 0 35% 4rem 0;
 	padding: 0;
 	
 	/*color: rgba(64, 83, 30, 1);*/
@@ -508,6 +508,11 @@ a[data-link-desc]:hover:before {
 	position: relative;
 }
 
+.logo img {
+	padding-top: 61px;
+	max-width: 199px;
+}
+
 .main{
 	box-sizing: border-box;
 	margin-top: 5rem;
@@ -517,6 +522,7 @@ a[data-link-desc]:hover:before {
 	width: 27%;
 	display: inline-block;
 	margin: 2rem 6.2% 4rem 0;
+	vertical-align: top;
 }
 
 .detail > article, .about_me > article {
@@ -636,4 +642,45 @@ a[data-link-desc]:hover:before {
 iframe {
 	height: 100%;
 	width: 100%;
+}
+
+
+.contact_box {
+	width: 100%;
+	position: relative;
+}
+
+.contact_box textarea {
+	width: 100%;
+	min-height: 12rem;
+	border-color: #FFF;
+	border-radius: 0.75rem;
+	background-color: rgba(255,255,255,0.95);
+	
+	padding: 1rem;
+
+}
+
+.contact_box button {
+	width: 33%;
+	margin-top: 1rem;
+	border-radius: 0;
+	height: 4rem;
+	background: #FFF;
+	border-style: solid;
+	font-size: 2rem;
+}
+
+.contact_box:after {
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-left: 20px solid #FFF;
+	/*border-bottom: 15px solid rgba(136,191,40,0.5);*/
+	/* alt color */ border-bottom: 15px solid transparent;
+	content: " ";
+	position: absolute;
+	left: 99.5%;
+	top: 30%;
+	z-index:99;
 }

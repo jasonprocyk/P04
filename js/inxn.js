@@ -14,6 +14,10 @@
 			}
 		});
 		
+		$("textarea").keypress(function(e){
+			e.stopPropagation();
+		});
+		
 		$("#show_nav").bind("click", function(){
 			$(this).toggleClass("selected");
 			$("#show_social_media").removeClass("selected")
