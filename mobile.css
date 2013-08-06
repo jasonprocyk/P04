@@ -105,11 +105,15 @@ h1 {
 .project_listing > article {
 	width: 100%;
 	display: block;
-	margin: 0 0 8rem 0;
+	margin: 8rem 0 0 0;
 }
 
 
 
-.main div {
+.main div, .main.project div {
 	width: 100%;
+}
+
+.main.project div {
+
 }
